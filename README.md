@@ -39,7 +39,7 @@ It ships together with **HyperDimension**, the 4D graphics and physics engine wr
 
 ![HyperDash Screenshot](Screenshot-1.png)
 
-> **Live Demo:** [nowii-core.github.io/Hyperdash/hyperdimension-2/](https://nowii-core.github.io/Hyperdash/hyperdimension-2/)
+> **Live Demo:** [nowii-core.github.io/Hyperdash/hyperdimension%202/](https://nowii-core.github.io/Hyperdash/hyperdimension%202/)
 
 ---
 
