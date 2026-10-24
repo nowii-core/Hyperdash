@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>HyperDash — 200-level platformer + 4D engine</title>
+  <meta name="description" content="HyperDimension: a from-scratch four-dimensional graphics and physics engine. Explore tesseracts, slice a 600-cell, play 4D puzzles, build levels. Zero dependencies — just open index.html.">
+  <meta name="theme-color" content="#04060f">
+  <meta property="og:title" content="HyperDimension — a 4D engine in your browser">
+  <meta property="og:description" content="Walk around walls through the fourth dimension. 4D rendering, 4D physics, level editor. Zero dependencies.">
+  <meta property="og:image" content="docs/hero.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2304060f'/%3E%3Cg fill='none' stroke='%2300e5ff' stroke-width='1.6'%3E%3Crect x='6' y='9' width='14' height='14'/%3E%3Crect x='12' y='5' width='14' height='14' stroke='%23ff3dcb'/%3E%3Cpath d='M6 9l6-4M20 9l6-4M6 23l6-4M20 23l6-4'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dash.css">
+</head>
+<body>
+  <canvas id="gl"></canvas>
+  <div id="dash" hidden></div>
+
+  <div id="ui">
+    <header id="topbar">
+      <button class="brand" id="brand" aria-label="Menu">
+        <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="9" width="15" height="15"/><rect x="12" y="4" width="15" height="15" stroke="#ff3dcb"/><path d="M4 9l8-5M19 9l8-5M4 24l8-5M19 24l8-5"/></g></svg>
+        <span>Hyper<b>Dimension</b></span>
+      </button>
+      <nav id="tabs" role="tablist"></nav>
+      <div class="spacer"></div>
+      <button class="icon" id="btnGame" title="HyperDash">🎮</button>
+      <button class="icon" id="btnLang" title="Language">EN</button>
+      <button class="icon" id="btnHelp" title="Help (H)">?</button>
+      <button class="icon" id="btnFull" title="Fullscreen (F)">⛶</button>
+    </header>
+
+    <aside id="panel"></aside>
+    <canvas id="gauge" width="64" height="320"></canvas>
+    <div id="hudTop"></div>
+    <div id="hint"></div>
+    <div id="toast"></div>
+    <div id="fps"></div>
+
+    <div id="touch" hidden>
+      <div id="stick"><div id="knob"></div></div>
+      <div id="tbtns">
+        <button data-k="wp">W+</button>
+        <button data-k="wm">W−</button>
+        <button data-k="jump" class="big">⤒</button>
+      </div>
+    </div>
+
+    <section id="intro">
+      <div class="intro-inner">
+        <button class="btn pri" id="introBack" style="margin-bottom:14px">🎮 ← HyperDash</button>
+        <div class="eyebrow">nowii-core · open source · zero dependencies</div>
+        <h1>HYPER<span>DIMENSION</span></h1>
+        <p class="tagline" data-i18n="tagline"></p>
+        <p class="sub" data-i18n="sub"></p>
+        <div class="cards" id="cards"></div>
+        <p class="foot" data-i18n="foot"></p>
+      </div>
+    </section>
+
+    <section id="modal" hidden></section>
+    <section id="fatal" hidden></section>
+  </div>
+
+  <script src="js/math4.js"></script>
+  <script src="js/polytopes.js"></script>
+  <script src="js/physics.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/gl.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/lab.js"></script>
+  <script src="js/play.js"></script>
+  <script src="js/sandbox.js"></script>
+  <script src="js/editor.js"></script>
+  <script src="js/dash/engine.js"></script>
+  <script src="js/dash/solver.js"></script>
+  <script src="js/dash/generator.js"></script>
+  <script src="js/dash/leveldata.js"></script>
+  <script src="js/dash/skins.js"></script>
+  <script src="js/dash/game.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
