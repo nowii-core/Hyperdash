@@ -37,7 +37,14 @@ It ships together with **HyperDimension**, the 4D graphics and physics engine wr
 
 ## Preview
 
-![HyperDash Screenshot](Screenshot-1.png)
+<p align="center">
+  <img src="gameplay-1.png" width="48%" alt="Gameplay 1" />
+  <img src="gameplay-2.png" width="48%" alt="Gameplay 2" />
+</p>
+<p align="center">
+  <img src="gameplay-3.png" width="48%" alt="Gameplay 3" />
+  <img src="gameplay-4.png" width="48%" alt="Gameplay 4" />
+</p>
 
 > **Live Demo:** [nowii-core.github.io/Hyperdash/hyperdimension-2/](https://nowii-core.github.io/Hyperdash/hyperdimension-2/)
 
